@@ -57,7 +57,6 @@ train_df['n_jobs'][train_df['n_jobs']== -1] = 16 #max
 test_df['n_jobs'][test_df['n_jobs']== -1] = 16 #max
 
 #Since test set has extra range of 'n_jobs' , 'n_samples' and 'n_features'
-
 #Data expansion, Dummy samples
 extra_X = pd.DataFrame(columns = list(test_df.columns))
 extra_X.head()
